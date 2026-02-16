@@ -1,54 +1,65 @@
-🛠️ MG996R High-Torque Metal Gear Servo<br>
-The MG996R is a high-torque digital servo motor widely used in robotics, RC systems, and embedded mechatronics projects. Known for its metal gear train and strong holding torque, it provides reliable performance for applications requiring precise angular positioning and mechanical load handling.
+Code was written for STM32F303RE / STM32F3xx, but is also compatible with other STM32 microcontrollers.
+<br><br>
 
+## 🛠️ MG996R High-Torque Servo Motor
 
-This project supports servo control using STM32 microcontrollers, specifically:<br>
-STM32F303RE (tested target)<br>
-STM32F333xx series (fully compatible)
+The MG996R is a high-torque digital servo motor widely used in robotics, RC systems, and embedded mechatronics projects.  
+It features a metal gear train for durability and provides reliable angular positioning under mechanical load.
 
-Any STM32 with:
-Hardware timers supporting PWM output<br>
-50 Hz servo signal generation
+This servo is ideal for robotic arms, drone manipulators, and precise motion control systems.
+<br><br>
 
+## 🔧 Key Features
+- High torque output (~9–13 kg·cm)<br>
+- Full metal gear train for durability<br>
+- PWM-controlled angular positioning<br>
+- Fast response and good holding torque<br>
+- Compatible with STM32, Arduino, ESP32, etc.
+<br><br>
 
-🔧 Key Features<br>
-High torque output (~9–13 kg·cm depending on voltage)<br>
-Metal gear gearbox for durability under load<br>
-PWM-controlled angular positioning (typically 0–180°)<br>
-Compatible with microcontrollers (STM32, Arduino, ESP32, etc.)<br>
-Fast response with good positional stability<br>
-Operates at 4.8V–7.2V supply
+## ⚙️ Electrical Characteristics
+- Operating Voltage: 4.8V – 7.2V<br>
+- Stall Torque: ~9.4 kg·cm @ 4.8V / ~11–13 kg·cm @ 6V<br>
+- Speed: ~0.17 s / 60° @ 6V<br>
+- Control Signal: PWM (50 Hz typical)<br>
+- Rotation Range: ~0–180°<br>
+- Weight: ~55 g
+<br><br>
 
+## 📡 STM32 Integration
+Fully compatible with STM32 MCUs including:<br>
+STM32F303RE, STM32F333xx<br>
+Any STM32 with hardware PWM timers
+<br><br>
 
-⚙️ Typical Specifications<br>
-Parameter	Value<br>
-Operating Voltage	4.8V – 7.2V<br>
-Stall Torque	~9.4 kg·cm @ 4.8V / ~11–13 kg·cm @ 6V<br>
-Speed	~0.17s / 60° @ 6V<br>
-Control Signal	PWM (50 Hz typical)<br>
-Rotation Range	~0–180°<br>
-Gear Type	Full metal gears<br>
-Weight	~55 g
+Typical wiring:<br>
+VCC → External 5–6V supply<br>
+GND → Common GND (shared with MCU)<br>
+Signal → TIMx_CHy PWM pin (e.g., PA8 / TIM1_CH1)
+<br><br>
 
+## 🧠 Control Principle
+The servo position is controlled using pulse-width modulation (PWM):<br>
+~1000 µs pulse → 0°<br>
+~1500 µs pulse → 90° (center)<br>
+~2000 µs pulse → 180°
+<br><br>
 
-🧠 Control Principle<br>
-The servo uses pulse-width modulation (PWM) to determine the shaft position:<br>
-~1 ms pulse → 0°<br>
-~1.5 ms pulse → 90°<br>
-~2 ms pulse → 180°<br>
-This makes it ideal for closed-loop positioning systems and real-time embedded control.
+Recommended configuration:<br>
+PWM Frequency: 50 Hz (20 ms period)<br>
+Timer Resolution: ≥ 16-bit for smooth motion
+<br><br>
 
+## 🧪 Typical Use Cases
+- Robotic arms and grippers<br>
+- Drone manipulators (STM32-based builds)<br>
+- Pan-tilt camera mounts<br>
+- RC vehicles and aircraft<br>
+- DIY automation systems
+<br><br>
 
-🤖 Common Applications<br>
-Robotic arms and grippers<br>
-Drone manipulators (e.g., STM32-based builds)<br>
-Pan-tilt camera mounts<br>
-RC cars, planes, and boats<br>
-DIY automation and prosthetics<br>
-
-
-📦 Why Use MG996R?<br>
-Affordable and widely available<br>
-Strong torque for its size<br>
-Robust metal gearing compared to plastic servos<br>
-Large community support and documentation
+## ⚠️ Notes
+- Do NOT power servo from MCU 5V pin<br>
+- Always use external power supply (≥2A recommended)<br>
+- Common ground between MCU and servo is mandatory<br>
+- Add bulk capacitor (≥470 µF) near servo supply to avoid brownouts<br>

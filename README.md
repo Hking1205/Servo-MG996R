@@ -2,6 +2,19 @@
 
 The MG996R is a high-torque digital servo motor widely used in robotics, RC systems, and embedded mechatronics projects. Known for its metal gear train and strong holding torque, it provides reliable performance for applications requiring precise angular positioning and mechanical load handling.
 
+This project supports servo control using STM32 microcontrollers, specifically:
+
+STM32F303RE (tested target)
+
+STM32F333xx series (fully compatible)
+
+Any STM32 with:
+
+Hardware timers supporting PWM output
+
+50 Hz servo signal generation
+
+
 🔧 Key Features
 
 High torque output (~9–13 kg·cm depending on voltage)

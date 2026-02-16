@@ -21,6 +21,7 @@ Compatible with microcontrollers (STM32, Arduino, ESP32, etc.)
 Fast response with good positional stability
 Operates at 4.8V–7.2V supply
 
+
 ⚙️ Typical Specifications
 
 Parameter	Value
@@ -38,6 +39,7 @@ Gear Type	Full metal gears
 
 Weight	~55 g
 
+
 🧠 Control Principle
 
 The servo uses pulse-width modulation (PWM) to determine the shaft position:
@@ -49,6 +51,7 @@ The servo uses pulse-width modulation (PWM) to determine the shaft position:
 
 This makes it ideal for closed-loop positioning systems and real-time embedded control.
 
+
 🤖 Common Applications
 
 Robotic arms and grippers
@@ -56,6 +59,7 @@ Drone manipulators (e.g., STM32-based builds)
 Pan-tilt camera mounts
 RC cars, planes, and boats
 DIY automation and prosthetics
+
 
 📦 Why Use MG996R?
 

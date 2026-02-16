@@ -24,18 +24,27 @@ Operates at 4.8V–7.2V supply
 ⚙️ Typical Specifications
 
 Parameter	Value
-Operating Voltage	4.8V – 7.2V; 
+Operating Voltage	4.8V – 7.2V
+
 Stall Torque	~9.4 kg·cm @ 4.8V / ~11–13 kg·cm @ 6V
+
 Speed	~0.17s / 60° @ 6V
+
 Control Signal	PWM (50 Hz typical)
+
 Rotation Range	~0–180°
+
 Gear Type	Full metal gears
+
 Weight	~55 g
+
 🧠 Control Principle
 
 The servo uses pulse-width modulation (PWM) to determine the shaft position:
 ~1 ms pulse → 0°
+
 ~1.5 ms pulse → 90°
+
 ~2 ms pulse → 180°
 
 This makes it ideal for closed-loop positioning systems and real-time embedded control.

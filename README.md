@@ -24,7 +24,7 @@ Operates at 4.8V–7.2V supply
 ⚙️ Typical Specifications
 
 Parameter	Value
-Operating Voltage	4.8V – 7.2V
+Operating Voltage	4.8V – 7.2V; 
 Stall Torque	~9.4 kg·cm @ 4.8V / ~11–13 kg·cm @ 6V
 Speed	~0.17s / 60° @ 6V
 Control Signal	PWM (50 Hz typical)

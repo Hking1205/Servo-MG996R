@@ -1,5 +1,4 @@
-🛠️ MG996R High-Torque Metal Gear Servo
-
+🛠️ MG996R High-Torque Metal Gear Servo<br>
 The MG996R is a high-torque digital servo motor widely used in robotics, RC systems, and embedded mechatronics projects. Known for its metal gear train and strong holding torque, it provides reliable performance for applications requiring precise angular positioning and mechanical load handling.
 
 
@@ -12,8 +11,7 @@ Hardware timers supporting PWM output<br>
 50 Hz servo signal generation
 
 
-🔧 Key Features
-
+🔧 Key Features<br>
 High torque output (~9–13 kg·cm depending on voltage)<br>
 Metal gear gearbox for durability under load<br>
 PWM-controlled angular positioning (typically 0–180°)<br>
@@ -22,8 +20,7 @@ Fast response with good positional stability<br>
 Operates at 4.8V–7.2V supply
 
 
-⚙️ Typical Specifications
-
+⚙️ Typical Specifications<br>
 Parameter	Value<br>
 Operating Voltage	4.8V – 7.2V<br>
 Stall Torque	~9.4 kg·cm @ 4.8V / ~11–13 kg·cm @ 6V<br>
@@ -34,8 +31,7 @@ Gear Type	Full metal gears<br>
 Weight	~55 g
 
 
-🧠 Control Principle
-
+🧠 Control Principle<br>
 The servo uses pulse-width modulation (PWM) to determine the shaft position:<br>
 ~1 ms pulse → 0°<br>
 ~1.5 ms pulse → 90°<br>
@@ -43,8 +39,7 @@ The servo uses pulse-width modulation (PWM) to determine the shaft position:<br>
 This makes it ideal for closed-loop positioning systems and real-time embedded control.
 
 
-🤖 Common Applications
-
+🤖 Common Applications<br>
 Robotic arms and grippers<br>
 Drone manipulators (e.g., STM32-based builds)<br>
 Pan-tilt camera mounts<br>
@@ -52,8 +47,7 @@ RC cars, planes, and boats<br>
 DIY automation and prosthetics<br>
 
 
-📦 Why Use MG996R?
-
+📦 Why Use MG996R?<br>
 Affordable and widely available<br>
 Strong torque for its size<br>
 Robust metal gearing compared to plastic servos<br>
